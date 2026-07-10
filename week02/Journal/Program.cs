@@ -4,6 +4,7 @@ using System;
 I exceeded the requirements by:
 1. Saving both the date and time for each journal entry.
 2. Adding extra journal prompts beyond the required five.
+3. Adding additional journal prompts beyond the required five.
 */
 
 class Program
@@ -38,9 +39,14 @@ class Program
 
                 string response = Console.ReadLine();
 
+                // Ask the user for their mood
+                Console.Write("How are you feeling today? ");
+                string mood = Console.ReadLine();
+
                 Entry entry = new Entry();
 
                 entry._date = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
+                entry._mood = mood;
                 entry._promptText = prompt;
                 entry._entryText = response;
 
