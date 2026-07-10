@@ -1,9 +1,9 @@
 using System;
 
 /*
-Creativity:
-Added two extra prompts.
-Displays confirmation after saving and loading.
+I exceeded the requirements by:
+1. Saving both the date and time for each journal entry.
+2. Adding extra journal prompts beyond the required five.
 */
 
 class Program
@@ -40,7 +40,7 @@ class Program
 
                 Entry entry = new Entry();
 
-                entry._date = DateTime.Now.ToShortDateString();
+                entry._date = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
                 entry._promptText = prompt;
                 entry._entryText = response;
 

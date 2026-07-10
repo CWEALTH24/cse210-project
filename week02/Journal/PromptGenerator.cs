@@ -11,7 +11,10 @@ public class PromptGenerator
         "What was the strongest emotion I felt today?",
         "If I had one thing I could do over today, what would it be?",
         "What made me smile today?",
-        "What is one thing I learned today?"
+        "What is one thing I learned today?",
+        "What is one goal I have for tomorrow?",
+        "What am I grateful for today?",
+        "What challenge did I overcome today?"
     };
 
     public string GetRandomPrompt()
